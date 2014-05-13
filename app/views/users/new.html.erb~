@@ -15,15 +15,11 @@
       <%= f.text_field :email %>
 			</p>
 
-			<p>
       <%= f.label :password %>
       <%= f.password_field :password %>
-			</p>
 
-			<p>
       <%= f.label :password_confirmation, "Confirmation" %>
       <%= f.password_field :password_confirmation %>
-			</p>
 
       <%= f.submit "Create my account", class: "btn btn-large btn-primary" %>
     <% end %>
