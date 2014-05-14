@@ -1,5 +1,11 @@
 require 'spec_helper'
 
 describe Tournament do
-  pending "add some examples to (or delete) #{__FILE__}"
+      before { @tournament = Tournament.new(name: "Test Tournament")}
+  
+  subject {@tournament}
+  
+  it{should respond_to(:name)}
+  it{should respond_to(:team_id)}
 end
+  
