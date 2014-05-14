@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Finalproject</title>
-  
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-	<%= yield %>
-</body>
+  <head>
+    <title>Tournament Tracker</title>
+    <%= render 'layouts/shim' %>
+  </head>
+  <body>
+    <%= render 'layouts/header' %>
+    <div class="container">
+      <%= yield %>
+      <%= render 'layouts/footer' %>
+    </div>
+  </body>
 </html>
