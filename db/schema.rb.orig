@@ -11,19 +11,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
+ActiveRecord::Schema.define(version: 20140506200649) do
+=======
 ActiveRecord::Schema.define(version: 20140514013020) do
+>>>>>>> teams_users
 
   create_table "games", force: true do |t|
     t.datetime "gametime"
     t.datetime "created_at"
     t.datetime "updated_at"
+<<<<<<< HEAD
+=======
     t.integer  "tournament_id"
+>>>>>>> teams_users
   end
 
   create_table "teams", force: true do |t|
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+<<<<<<< HEAD
+  end
+
+=======
     t.integer  "user_id"
     t.integer  "tournament_id"
   end
@@ -44,12 +55,16 @@ ActiveRecord::Schema.define(version: 20140514013020) do
   add_index "teams_users", ["team_id", "user_id"], name: "index_teams_users_on_team_id_and_user_id"
   add_index "teams_users", ["user_id"], name: "index_teams_users_on_user_id"
 
+>>>>>>> teams_users
   create_table "tournaments", force: true do |t|
     t.string   "name"
     t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
+<<<<<<< HEAD
+=======
     t.integer  "team_id"
+>>>>>>> teams_users
   end
 
   create_table "users", force: true do |t|
@@ -59,8 +74,11 @@ ActiveRecord::Schema.define(version: 20140514013020) do
     t.string   "password_digest"
     t.datetime "created_at"
     t.datetime "updated_at"
+<<<<<<< HEAD
+=======
     t.integer  "team_id"
     t.integer  "tournament_id"
+>>>>>>> teams_users
   end
 
 end
